@@ -1,0 +1,174 @@
+/*APP*/
+.App {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(164, 164, 164, 0.374);
+}
+.App-header{
+  width: 100%;
+  height: 150px;
+  background-color: darkslategrey;
+  color: white;
+ 
+}
+.App-nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+}
+/*==============================*/
+
+/*HOME*/
+input {
+  margin-top: 0;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 565px;
+  padding: 5px;
+}
+.Home-search {
+  margin-top: 50px;
+}
+.Home-table {
+  background-color: white;
+  margin-top: 50px;
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+}
+.Home-table-tbody-title {
+  border: none;
+}
+table{
+  width: 1000px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+  border-collapse: collapse;
+}
+table,tr,th,td {
+  border: 1px solid lightgrey;
+}
+th {
+  font-size: 30px;
+}
+td {
+  padding: 5px;
+  font-size: 20px;
+}
+button {
+  border-radius: 5px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.Home-table-tbody-rating {
+  font-weight: bold;
+}
+/*==============================*/
+
+/*ADD*/
+
+.Add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+textarea {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.Add-form-rating {
+  font-size: 30px;
+  font-weight: bold;
+}
+.Add-form-rating-input {
+  display: none;
+}
+input::-webkit-slider-runnable-track { /* track */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10); 
+}
+input::-moz-range-track { /* progress  */
+}
+input::-ms-track {  /* thumb */
+ border-radius: 5px;
+ font-size: 100px;
+}
+.Add-form-button {
+  font-size: 30px;
+  background-color: white;
+}
+
+/*==============================*/
+/*EDIT*/
+.Edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Edit-form-rating {
+  font-size: 30px;
+}
+/* ändra slider */
+.Edit-form-rating-input { /*.add-rating*/  /* <----------------- ****************** */
+  margin-bottom: 30px;
+  width: 311px;
+  color: pink
+}
+#rating {  /* <----------------- ****************** */
+  margin-bottom: 30px;
+  width: 311px;
+  color: pink;
+  background-color: yellow;
+}
+
+
+.Edit-form-button {
+  font-size: 30px;
+  background-color: white;
+}
+/*==============================*/
+
+/*DETAILS*/
+.Details-card {
+  width: 565px;
+  background-color: white;
+  margin-top: 50px;
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+}
+.Details-card-title-info {
+  font-weight: bold;
+  font-size: 15px;
+}
+h2 {
+  font-size: 20px;
+}
+p {
+  font-size: 15px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.Details-card-rating-info {
+  font-size: 30px;
+}
+.Details-card-button-edit {
+  font-size: 30px;
+  margin: 20px;
+}

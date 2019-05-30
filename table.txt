@@ -1,0 +1,45 @@
+// table
+
+
+<label htmlFor='search'></label>
+                <input 
+                    className='searchfield' 
+                    type='text' name='search' 
+                    id='search' placeholder='Search...' 
+                    onChange={this.onChange} 
+                    spellCheck='false'>
+                </input> 
+
+                <table className='movie-table' 
+                        cellSpacing='0' 
+                        cellPadding='0'>
+
+
+                    <thead>
+                        <tr className='head-row'>
+                            <th className='th-title'>Title</th>
+                            <th className='th-director'>Director</th>
+                            <th className='th-rating'>Rating</th>
+                            <th className='th-edit'></th>
+                            <th className='th-details'></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {this.getFilteredMovies().map(movie => 
+                        <tr className='movie-row' key={movie.id}>
+                            <td className='td-title'>{movie.title}</td>
+                            <td className='td-director'>{movie.director}</td>
+                            <td className='td-rating'><Rater total={5} interactive={false} rating={Number(movie.rating)} />({movie.rating})</td>
+                            <td className='links'>
+
+                            <Link to={'/edit/' + movie.id} className='edit-link'>Edit<i className='fas fa-edit edit-icon'></i></Link>
+                            <Link to={'/details/' + movie.id} className='details-link'>Details</Link>
+                           
+                            <button className='delete-button' onClick={() => this.deleteMovie(movie.id)}><i className='far fa-trash-alt'></i></button>
+                            </td>
+                        </tr>
+                        )}
+
+                    </tbody>
+                </table>
